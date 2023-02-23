@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.debug{
+    border: 2px dotted red;
+}
+
+/* bottoni in alto a dx */
+
+.bottoni-alti{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+}
+#align-right{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: ;
+}
+
+/* griglia principale */
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+#green-color{
+    color: green;
+}
+.main{
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto{
+    width: calc((100% / 7) - 1%);
+    margin-top: 10px;
+    position: relative;
+}
+
+img{
+    display: block;
+}
+
+.grandezza-profilo{
+    width: 100%;
+}
+.pino-pallo{
+    color: white;
+    position: absolute;
+    background-color: rgba(43, 42, 42, 0.6);
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+}
+
+
+#intermezzo{
+    height: 2vh;
+    background-color: black;
+}
+
+
+
+/* footer */
+footer{
+    background-color: rgb(80, 80, 80);
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 8vh;
+    z-index: 10;
+}
+.tasti{
+    font-size: 40px;
+    color: white;
+}
+p{
+    color: white;
+}
+.menu{
+    font-size: 20px;
+}
+
+/*  selezione per figli di nav, ovvero div, i quali hanno margine dx/sx  */
+nav > div,
+aside > div{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#end{
+    color: red;
+    background-color: lightgrey;
+    height: 8vh;
+    width: 15vh;
+    font-weight: bold;
+}
